@@ -1,0 +1,108 @@
+/* src/pages/About.css */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Lora:wght@400&display=swap');
+
+.about-container {
+  font-family: 'Open Sans', sans-serif; /* Main font */
+  text-align: center;
+  color: #333;
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.heading {
+  font-size: 48px;
+  font-family: 'Poppins', sans-serif; /* Changed to Poppins for the heading */
+  font-weight: 600;
+  color: #ffffff; /* Light text color for contrast */
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adding a shadow for better visibility */
+  animation: fadeIn 1s ease-out;
+}
+
+.description {
+  font-size: 18px;
+  font-family: 'Lora', serif; /* Changed to Lora for paragraphs */
+  color: #f1f1f1; /* Light gray for the text for better contrast */
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-weight: 400;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Light text shadow for visibility */
+  animation: fadeIn 2s ease-out;
+}
+
+.textBlue {
+  color: #3498db; /* Highlighted text with blue */
+  font-weight: 600;
+}
+
+.subheading {
+  font-size: 28px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: #3498db; /* Blue subheading */
+  margin-bottom: 20px;
+  margin-top: 40px;
+  animation: fadeIn 2.5s ease-out;
+}
+
+.teamMember {
+  background-color: #ffffff; /* White background for team members */
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 350px;
+  margin: 15px auto;
+  animation: fadeIn 3s ease-out;
+}
+
+.teamMember:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.name {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.role {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  font-style: italic;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Mobile Responsive Design */
+@media screen and (max-width: 600px) {
+  .heading {
+    font-size: 36px;
+  }
+
+  .subheading {
+    font-size: 24px;
+  }
+
+  .teamMember {
+    width: 90%;
+  }
+}
